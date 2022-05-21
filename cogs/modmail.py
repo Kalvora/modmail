@@ -77,11 +77,11 @@ class Modmail(commands.Cog):
                     logger.info("Granting %s access to Modmail category.", key.name)
                     overwrites[key] = discord.PermissionOverwrite(read_messages=True)
 
-        category = await self.bot.modmail_guild.create_category(name="Modmail", overwrites=overwrites)
+        category = await self.bot.modmail_guild.create_category(name="🏡Ticket Home", overwrites=overwrites)
 
         await category.edit(position=0)
 
-        log_channel = await self.bot.modmail_guild.create_text_channel(name="bot-logs", category=category)
+        log_channel = await self.bot.modmail_guild.create_text_channel(name="ticket-logs", category=category)
 
         embed = discord.Embed(
             title="Friendly Reminder",
@@ -94,8 +94,8 @@ class Modmail(commands.Cog):
         embed.add_field(
             name="Thanks for using our bot!",
             value="If you like what you see, consider giving the "
-            "[repo a star](https://github.com/kyb3r/modmail) :star: and if you are "
-            "feeling extra generous, buy us coffee on [Patreon](https://patreon.com/kyber) :heart:!",
+            "[repo a star](https://github.com/Kalvora/modmail) :star: and if you are "
+            "feeling extra generous, buy VIP!",
         )
 
         embed.set_footer(text=f'Type "{self.bot.prefix}help" for a complete list of commands.')
