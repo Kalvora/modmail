@@ -91,12 +91,6 @@ class Modmail(commands.Cog):
             color=self.bot.main_color,
         )
 
-        embed.add_field(
-            name="Thanks for using our bot!",
-            value="If you like what you see, consider giving the "
-            "[repo a star](https://github.com/Kalvora/modmail) :star: and if you are "
-            "feeling extra generous, buy VIP!",
-        )
 
         embed.set_footer(text=f'Type "{self.bot.prefix}help" for a complete list of commands.')
         await log_channel.send(embed=embed)
