@@ -307,11 +307,11 @@ class Utility(commands.Cog):
         embed.set_author(
             name="Modmail - About",
             icon_url=self.bot.user.avatar_url,
-            url="https://discord.gg/X62Zw9m3nM",
+            url="https://discord.gg/3em4bEevMA",
         )
         embed.set_thumbnail(url=self.bot.user.avatar_url)
 
-        desc = "This is a private Discord bot that serves as a means for "
+        desc = "This is a private Discord bot coded for Pizza & Fries restaurant that serves as a means for "
         desc += "members to easily communicate with server administrators in "
         desc += "an organised manner."
         embed.description = desc
@@ -341,7 +341,7 @@ class Utility(commands.Cog):
 
         embed.add_field(
             name="Support the Developers",
-            value="You can support kalvora buy buying VIP on the game!",
+            value="You can support P&F buy buying VIP on the game!",
             inline=False,
         )
 
